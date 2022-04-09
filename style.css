@@ -304,7 +304,7 @@ figure img{
 #gast .headlineeee{
     background-color: red;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 #gast .headlineeee p{
     font-size: max(18px, 1.6vw);
@@ -521,16 +521,16 @@ figure img{
 
 .what{
     position: fixed;
-    width:46px;
-    height:46px;
-    bottom:20px;
+    width:40px;
+    height:42px;
+    bottom:24px;
     left:20px;
     background-color: #25d366;
     z-index: 999;
     padding:10px;
-    padding-top: 2px;
-    padding-bottom: 10px;
-    padding-left: 8px;
+    padding-top: 1px;
+    padding-bottom: 8px;
+    padding-left: 5px;
     font-size: 35px;
     box-shadow: 1px 1px 4px #000; 
     border-radius: 50px;
@@ -544,14 +544,13 @@ figure img{
     text-decoration: none;
     color:gold;
     background-color: rgba(0,0,0,0.3);
-    padding: 10px;
+    padding: 8px;
     position: fixed;
     border-radius: 5px;
     box-shadow: 1px 1px 4px #000; 
     right:20px;
-    bottom: 25px;
+    bottom: 24px;
     font-size: 15px;
-    bottom:30px;
 }
 .polaroida h1{
     color:gray;
@@ -825,10 +824,10 @@ footer .fot p{
         padding-top: 10px;
         text-align: center;
         left:25%;
-        top:28%;
+        top:24%;
     }
     .menubot #ulnave li{
-        font-size:20px;;
+        font-size:19px;;
         border-bottom: none;
         padding: 12px;
         font-weight: bold;
@@ -903,14 +902,14 @@ footer .fot p{
         width:40px;
         transform: rotate(180deg);
         transition: 2s ease infinite;
-        height:15px;
+        height:16px;
         cursor: pointer;
     }
     .images img{
         position: absolute;
-        bottom: 1%;
-        left:50%;
-        width: 30px;
+        bottom: 0.5%;
+        left:48%;
+        width: 26px;
         animation: jump 1s linear infinite;
         cursor: pointer;
     }
@@ -948,15 +947,13 @@ footer .fot p{
         left: 50%;
     }
     .polaroid{
-        width:95%;
-        padding-left: 10px;
-        padding-right: 10px;
+        width:97%;
         padding-top: 10px;
         padding-bottom: 20px;
         margin-bottom: 10px;
-        margin-left: 1px;
         margin-top: 10px;
-        margin-right: 10px;
+        margin-right: 8px;
+        margin-left: 2px;
     }
     .polaroid:hover{
         transform: scale(1.1);
@@ -967,7 +964,7 @@ footer .fot p{
         padding-right: 8px;
         padding-top: 8px;
         margin-bottom: 40px;
-        margin-left: 5px;
+        margin-left: 1px;
         margin-right: 30px;
     }
     .headline p{
@@ -1045,17 +1042,23 @@ footer .fot p{
         display: none;
     }
     #inicio aside video{
-        width: 75vw;
+        width: 80vw;
         object-fit: cover;
         transition: 2s;
         padding-top: 6px;
-        padding-right: 18px;
+        padding-right: 15px;
         opacity: 0.8;
         cursor: pointer;
     }
     #gast{
         padding-left:10px;
         padding-right: 10px;
+    }
+    #gast  .galeria .foto1{
+        border-radius: 10px;
+        background-color: grey;
+       margin-bottom: 30px;
+        width:70vw;
     }
     #gast .galeria{
         background-color: beige;
@@ -1075,14 +1078,14 @@ footer .fot p{
     }
     #gast .man p {
         width:90vw;
-        padding-top: 10px;
         padding-left: 5%;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
     }
     #gast .man img{
         width:72%;
         border-radius: 15px;
         margin-left: 50px;
+        padding-bottom: 14px;
     }
     #gast .man{
         display: flex;
@@ -1097,15 +1100,15 @@ footer .fot p{
         color:grey;
     }
     #gast .galeria .foto1 h1{
-        font-size: max(18px, 1.2vw);
+        font-size:16px;
         visibility: visible;
     }
     #gast .galeria .foto1 .texto p{
-        bottom:3.5vh;
+        bottom:2vh;
         visibility: visible;
         color: white;
         height: 18vh;
-        font-size: max(14.6px, 1.2vw);
+        font-size: 14px;
     }
     #gast .por{
         background-color: beige;
@@ -1113,7 +1116,7 @@ footer .fot p{
     }
     #gast .galeria .foto1 .texto{
         position: absolute;
-        top:0.6px;
+        top:0.4px;
         left:0px;
         z-index: 1000;
         width: 70vw;
