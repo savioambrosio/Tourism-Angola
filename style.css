@@ -1,0 +1,1127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  "Be Vietnam Pro", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(14px, 1.2vw);
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    background-color: beige;
+    width:100vw;
+    overflow-x: hidden;
+}
+.slide ul{
+    position: absolute;
+    top:42%;
+    color: red;
+    left:70vw;
+    list-style: none;
+    font-size: 50px;
+}
+.slide h1{
+    color: rgba(0,0,0,0.0);
+    font-size: max(24px, 1.2vw);
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    object-fit: cover;
+    border-bottom: solid 2px black;
+    position: absolute;
+    top: 42%;
+    left: 48vw;
+    -webkit-text-stroke: 0.3vh rgba(0,0,0,0.0);
+    text-transform: uppercase;
+}
+.slide h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0%;
+    left: 0vw;
+    width:0;
+    height:100%;
+    color: black;
+    animation: ani 3s linear infinite;
+    -webkit-text-stroke: 0vw red;
+    border-right: 2px solid rgba(0,0,0,0.0);
+    overflow: hidden;
+}
+.slide h2{
+    color: rgba(0,0,0,0.0);
+    font-size: max(24px, 1.2vw);
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    object-fit: cover;
+    border-bottom: solid 2px gold;
+    position: absolute;
+    top: 42%;
+    left: 35vw;
+    -webkit-text-stroke: 0.3vh rgba(0,0,0,0.0);
+    text-transform: uppercase;
+}
+.slide h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0%;
+    left: 0vw;
+    width:0;
+    height:100%;
+    color: gold;
+    animation: ani 3s linear infinite;
+    -webkit-text-stroke: 0vw red;
+    border-right: 2px solid rgba(0,0,0,0.0);
+    overflow: hidden;
+}
+.slide h3{
+    color: rgba(0,0,0,0.1);
+    font-size: max(24px, 1.2vw);
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    font-weight: bold;
+    object-fit: cover;
+    border-bottom: solid 2px red;
+    position: absolute;
+    top: 42%;
+    left: 53vw;
+    -webkit-text-stroke: 0.3vh rgba(0,0,0,0.0);
+    text-transform: uppercase;
+}
+.slide h3::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0%;
+    left: 0vw;
+    width:0;
+    height:100%;
+    color:red;
+    animation: ani 3s linear infinite;
+    -webkit-text-stroke: 0vw red;
+    border-right: 2px solid rgba(0,0,0,0.0);
+    overflow: hidden;
+}
+@keyframes ani {
+    0%{
+        width:0;
+    }
+    70%, 90%{
+        width:100%;
+    }
+    
+}
+.slide p{
+    color: white;
+    font-size: max(20px, 1.2vw);
+    text-align: center;
+    padding-bottom: 15px;
+    font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    position: absolute;
+    top: 55%;
+    left: 11%;
+    right: 14%;
+    animation: jump 2s linear infinite;
+    animation-delay: 4;
+}
+.manual{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.manual:hover{
+    background: white;
+    transition: 0.4s;    
+}
+.navibar{
+    justify-content: center;
+    display: flex;
+    margin: 1px;
+}
+.navibar label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border:solid white 3px;
+    bottom:5%;
+    margin: 5px;
+    background-color: grey;
+}
+.images img{
+    position: absolute;
+    bottom: 4%;
+    left:50%;
+    width: 30px;
+    animation: jump 1s linear infinite;
+    cursor: pointer;
+}
+@keyframes jump {
+    from{transform: translateY(-15px);}
+    50%{transform: translateY(0);}
+    to{transform: translateY(-15px);}
+}
+@keyframes letras{
+    0%{
+        transform: translateY(12rem) rotateY(-30deg); 
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+
+}
+@keyframes jumpe {
+    from{transform: translateY(-15px);opacity: 0;}
+    50%{transform: translateY(0);}
+    to{transform: translateY(15px);opacity: 1;}
+}
+nav{
+    width: 100vw;
+    background: linear-gradient(72deg,rgb(230, 0, 0) 20%, gold 99%);
+    color: white;
+    z-index: 9999;
+    position: fixed;
+}
+nav #ulnave{
+    display: none;
+}
+#navcontanier{
+    width: 90%;
+    height:100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color:gainsboro;
+    font-weight: bold;
+    border-bottom: 2px solid gainsboro;
+}
+nav ul li{
+    padding: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "Josefin Slab", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li i{
+    padding-right: 8px;
+    font-size: 14px;
+}
+.ima img{
+    width:55px;
+}
+.slide{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+figure img{
+    width: 100vw;
+    height:100vh;
+    object-fit:cover;
+    opacity:0.6;
+}
+#slides figure{
+    width:20%;
+    background-color: rgba(0,0,0,0.8);
+    transition: .6;
+}
+#slides{
+    width:100%;
+    overflow: hidden;
+}
+#slides figure{
+    display: flex;
+    width:500%;
+    animation: 8s slider infinite;
+    margin:0;
+    left:0;
+    position: relative;
+}
+@keyframes zoom {
+   0% {
+    transform: scale(1.3);
+   }
+   100%{
+    transform: scale(1);
+   }
+}
+
+@keyframes slider {
+    0%{
+        left:0;
+    }
+    20%{
+        left: 0;
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+    25%{
+        left:-100%;
+        transform: translateY(0) rotateY(0);
+    }
+    45%{
+        left: -100%;
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+    50%{
+        left:-200%;
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }  
+    70%{
+        left:-200%;
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    } 
+    75%{
+        left:-300%;
+
+    }  
+    95%{
+        left:-300%;
+
+    }      
+    100%{
+        left:-400%;
+    }     
+}
+#gast .cu p{
+    opacity: 0;
+}
+#gast .headlineeee{
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#gast .headlineeee p{
+    font-size: max(18px, 1.6vw);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: beige;
+    background: linear-gradient(72deg,rgb(230, 0, 0) 20%, gold 99%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#atracoes .headlineeee{
+    background-color: red;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+#atracoes .headlineeee p{
+    font-size: max(18px, 1.6vw);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: beige;
+    background: linear-gradient(72deg,rgb(230, 0, 0) 20%, gold 99%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#cliente .headlineee{
+    background-color: red;
+    margin-top: 1px;
+    margin-bottom: 18px;
+}
+#cliente .headlineee p{
+    font-size: max(18px, 1.6vw);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: beige;
+    background: linear-gradient(72deg,rgb(230, 0, 0) 20%, gold 99%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#cliente{
+    width: 100%;
+    height: 100%;
+    padding-top: 5.1%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: beige;
+    display: block;
+}
+#gast{
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color:beige;
+    justify-content: center;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-top: 18px;
+    cursor: pointer;
+}
+#gast .por p{
+    background-color: beige;
+    width:68vw;
+    justify-content: center;
+    font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: max(16px, 1.2vw);
+    color:gray;
+}
+#gast .por{
+    background-color: beige;
+    padding-left: 15%;
+    margin-bottom: 20px;
+}
+#gast .man{
+    background-color: beige;
+    padding: 25px;
+    padding-left: 15%;
+    display: flex;
+    margin-bottom: 15px;
+}
+#gast .man img{
+    width:24vw;
+    border-radius:10px;
+    transition: 1s;
+}
+#gast .man img:hover{
+    transform: scale(1.1);
+}
+#gast .man p{
+    width:44vw;
+    padding-left: 28px;
+    font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: max(16px, 1.2vw);
+    color:grey;
+}
+#gast .galeria{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding-left: 12%;
+    grid-gap: 20px;
+    width:80vw;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+#gast  .galeria .foto1:hover{
+    transform: scale(1.1);
+}
+#gast  .galeria .foto1 img{
+    width:21vw;
+    height:35vh;
+    padding-top: 0px;
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+}
+#gast .galeria .foto1 .texto{
+    position: absolute;
+    top:0.6px;
+    left:6px;
+    z-index: 1000;
+    width: 21vw;
+    border-radius: 10px;
+    height: 0vh;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    transition: 0.6s;
+}
+#gast .galeria .foto1 h1{
+    color:white;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 1px 1px 0px 0px white;
+    font-size: max(20px, 1.2vw);
+    visibility: hidden;
+}
+#gast .galeria .foto1:hover  .texto{
+    visibility: visible;
+    height: 35vh;
+}
+#gast .galeria .foto1 .texto p{
+    position: absolute;
+    bottom:7%;
+    left:13px;
+    right: 15px;
+    height:27vh;
+    color: black;
+    text-align: justify;
+    cursor: pointer;
+    visibility: hidden;
+    color: white;
+    font-size: max(16px, 1.2vw);
+    transition: 1s;
+}
+#gast .galeria .foto1 .texto:hover p{
+    visibility: visible;
+    transition: 1s;
+}
+#gast .galeria .foto1 .texto:hover h1{
+    visibility: visible;
+}
+#gast .galeria .foto1{
+    background-color: beige;
+    position: relative;
+    text-align: center; 
+    transition: 1s;
+}
+#agast main{
+    width: 100%;
+    display: grid;
+    overflow: auto;
+    transition: 3s;
+    padding: 18px;
+    padding-left: 18px;
+    background: beige;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3px;
+}
+#atracoes{
+    width: 100%;
+    display: block;
+    height: 100%;
+    background-color: beige;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    cursor: pointer;
+}
+#atracoes main{
+    width: 100%;
+    display: grid;
+    overflow: auto;
+    transition: 3s;
+    padding: 18px;
+    padding-left: 18px;
+    background: beige;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3px;
+}
+#cliente main{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    transition: 3s;
+    background: beige;
+    padding:20;
+    list-style: none;
+}
+
+.what{
+    position: fixed;
+    width:46px;
+    height:46px;
+    bottom:20px;
+    left:20px;
+    background-color: #25d366;
+    z-index: 999;
+    padding:10px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    font-size: 35px;
+    box-shadow: 1px 1px 4px #000; 
+    border-radius: 50px;
+    animation: jump 1s linear infinite;
+    cursor: pointer;
+}
+.what i{
+    color:white;
+}
+#link{
+    text-decoration: none;
+    color:gold;
+    background-color: rgba(0,0,0,0.3);
+    padding: 10px;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #000; 
+    right:20px;
+    bottom: 25px;
+    font-size: 15px;
+    bottom:30px;
+}
+.polaroida h1{
+    color:gray;
+    font-size: 1.2rem;
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 3px solid gold;
+    padding-bottom: 5px;
+}
+#cliente main .polaroida li a{
+    font-size: 1.0rem;
+    color: gray;
+    text-align: left;
+    font-family: "josefin",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#cliente main .polaroida li i{
+    color: gray;
+    font-weight:bold;
+    text-align: left;
+    padding-right: 10px;
+}
+#cliente main .polaroida li{
+    font-size: 1.0rem;
+    color: gray;
+    font-family: "josefin",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1px;
+    align-items: left;
+}
+#cliente main .polaroida{
+    width:50vw;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-top: 20px;
+    background-color:white;
+}
+#cliente main .polaroida img{
+    flex: 1 0 200px;
+    margin: 0 0px;
+    margin-right: 10px;
+    left: 50%;
+    width:160px;
+    height: 160px;
+    align-items: center;
+    object-fit: cover;
+    border-radius:50%;
+    margin-bottom: 13px;
+    margin-left: 32px;
+    border: 2px solid gold;
+    transition: 1s;
+}
+#cliente main .polaroida img:hover{
+    transform: scale(1.1);
+    opacity: 90%;
+    background-color: grey;
+}
+.polaroid{
+    width:90%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 7px;
+    transition: 1s;
+}
+.polaroid img{
+    width: 100%;
+    object-fit: cover;
+    height: 26vh;
+    padding-bottom: 4px;
+    transition: 1s;
+}
+.polaroid h2{
+    padding-bottom: 3px;
+    color:white;
+    font-size: 1.0rem;
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(72deg,rgb(230, 0, 0) 20%, gold 99%);
+}
+.polaroid p{
+    padding-top: 6px;
+    font-size: 1.0rem;
+    color:gray;
+}
+#inicio{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 5.2%;
+    padding-right: 50px;
+}
+#inicio aside{
+    background-color: beige;
+    width: 45vw;
+    margin-left: 30px;
+    height: 100%;
+    align-items: center;
+}
+#inicio aside video{
+    width: 25.6vw;
+    object-fit: cover;
+    transition: 2s;
+    padding-bottom: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#inicio aside video:hover{
+    transform: scale(1.1);
+}
+.polaroid:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: white;
+    box-shadow: 0px 0px 1px #000; 
+}
+#inicio aside p{  
+    position: end;
+    color: rgb(212, 151, 151);
+    background: linear-gradient(72deg,red 20%, gold 100%);
+    font-family:  "Mulish", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.0rem;
+}
+#inicio main{
+    width: 100vw;
+    margin-right: 20px;
+    height:100%;
+}
+#inicio main img{
+    width: 100%;
+    text-align: end;
+    padding-top: 15px;
+    opacity: 0.9;
+}
+main h2{
+    color: white;
+    background: linear-gradient(72deg,red 20%, gold 100%);
+    font-size: max(20px, 1.2vw);
+}
+main p{
+    padding-top: 12px;
+    font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: max(16px, 1.2vw);
+    color:gray;
+}
+.ima img{
+    cursor: pointer;
+}
+footer{
+    height: 10%;
+    background-color: rgb(24, 24, 24);
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 100vw;
+    text-align: center;
+    display: block;
+    justify-content: flex;
+}
+footer .fot{
+    padding-bottom: 30px;
+    justify-content: space-between;
+    font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer img{
+    width:40vw;
+    padding-bottom: 15px;
+}
+footer .fot i{
+    font-size: 16px;
+    padding-right: 13px;
+    transition: 0.5s;
+}
+footer .fot a i{
+    font-size: 30px;
+    margin-top: 1px;
+    color:beige;
+    list-style: none;
+}
+footer .fot a{
+    color:rgba(255, 203, 203, 0);
+}
+footer .fot .wha i:hover{
+    color: rgb(101, 217, 246);
+    border-radius: 15px;
+    width:60px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 6px rgb(101, 217, 246); 
+    padding: 8px;
+    background-color: white;
+}
+footer .fot .gi i:hover{
+    color: rgb(165, 162, 162);
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px grey; 
+    width:40px;
+    padding: 4px;
+    margin-right: 10px;
+    background-color: white;
+}
+footer .fot .fac i:hover{
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    background-color:rgb(60, 134, 219); 
+    box-shadow: 1px 1px 6px white; 
+}
+footer .fot p{
+    font-size: max(14px, 1.4vw);
+    padding-bottom: 20px;
+    color:beige;
+}
+.menubot{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    #cliente{
+        padding-top: 6%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        background-color: beige;
+        display: block;
+        
+    }
+    footer img{
+        width:90vw;
+        padding-bottom: 15px;
+    }
+    #cliente .headlineee{
+        background-color: red;
+        margin-top: 40px;
+        margin-bottom: 23px;
+    }
+    #atracoes .headlineeee{
+        background-color: red;
+        margin-bottom: 5px;
+        margin-top: 55px;
+    }
+    .menubot{
+        width:100vw;
+        background: rgba(0,0,0,0.1);
+        backdrop-filter: blur(10px);
+        padding-top: 28px;
+        top: 56px;
+        height: 0vh;
+        z-index: 9999;
+        position: fixed;
+        bottom: 2%;
+        left:0%;
+        transition: 0.8s;
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    @keyframes zoom{
+        0%{
+            transform: scale(1.3);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    .menubot #ulnave{
+        display: block;
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+        text-align: center;
+        left:25%;
+        top:28%;
+    }
+    .menubot #ulnave li{
+        font-size: max(21px, 1.1vw);
+        border-bottom: none;
+        padding: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .menubot #ulnave li i{
+        padding-right: 10px;
+    }
+    .menubot #ulnave li:hover{
+        color: rgb(219, 238, 255);
+        border-bottom: 2px solid aliceblue;
+    }
+    .menubot.open{
+        height: 100vh;
+        visibility: visible;
+        display: block;
+        transition: 1.2s;
+    }
+    .open{
+        display: block;
+    }
+    ::-webkit-scrollbar{
+        background-color: grey;
+        border-radius:3px;
+        width:1px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(0,0,0,0.3);
+        width:1px;
+        border-radius: 2px;
+    }
+    body{
+        width:100vw;
+        overflow-x: hidden;
+    }
+    figure img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 0.6;
+    }
+    #inicio{
+        display: block;
+        padding: 15px;  
+        height: 100%;
+        padding-top: 25%;
+    }
+    nav #ulnav{
+        display: none;
+    }
+    .ima img{
+        width:45px;
+    }
+    nav {
+        height:55px;
+        padding-top: 10px;
+        z-index: 9999;
+        position: fixed;
+    }
+    nav .linha{
+        display: block;
+        background-color: whitesmoke;
+        width:33px;
+        height: 2.9px;
+        cursor: pointer;
+        box-shadow: 0.1rem 0.1rem 1px grey;
+    }
+    nav .btnmobile{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:40px;
+        transform: rotate(180deg);
+        transition: 2s ease infinite;
+        height:18px;
+        cursor: pointer;
+    }
+    .images img{
+        position: absolute;
+        bottom: 4%;
+        left:50%;
+        width: 30px;
+        animation: jump 1s linear infinite;
+        cursor: pointer;
+    }
+    #atracoes{
+        display: block;
+        height: 100%;
+        padding:10px;
+        background-color: beige;
+    }  
+    #atracoes main{
+        width: 100%;
+        display: grid;
+        overflow: auto;
+        transition: 3s;
+        background-color: beige;
+        padding-right: 10px;
+        padding-top: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-gap: 3px;
+    }
+    #cliente main {
+        width:100%;
+    }
+    #cliente main .polaroida{
+        width:100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        margin-right: 4px;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px grey;
+    }
+    #cliente main .polaroida img{
+        margin-right: 50px;
+        left: 50%;
+    }
+    .polaroid{
+        width:95%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        margin-left: 1px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .polaroid:hover{
+        transform: scale(1.1);
+        transition: 2s;
+        background-color: gainsboro;
+        color: white;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        margin-bottom: 40px;
+        margin-left: 5px;
+        margin-right: 30px;
+    }
+    .headline p{
+        margin-left: 15px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .slide{
+        background-color: beige;
+        width: 100%;
+        height: 90vh;
+    }
+    .slide p{
+        top: 54%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .slide h2{
+        top: 44%;
+        left: 14vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .slide h1{
+        top: 44%;
+        left: 50vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .slide h3{
+        top: 44%;
+        left: 65vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+    #inicio main{
+        width: 100%;
+        padding-right: 0px;
+        padding-top: 1px;
+        height:100%;
+        padding-left:2px;
+        background-color: beige;
+    }
+    #inicio main p{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #inicio main h2{
+        font-size: max(18px, 1.1vw);
+        padding-top: 1px;
+    }
+    #inicio main img{
+        width: 100%;
+        opacity: 0.9;
+        height: 23vh;
+        padding-top: 10px;
+    }
+    #inicio aside{
+        padding:0px;
+        background-color: beige;
+        overflow: scroll;
+        width: 100%;
+        display: flex;
+        height:26vh;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #inicio aside p{
+        display: none;
+    }
+    #inicio aside video{
+        width: 75vw;
+        object-fit: cover;
+        transition: 2s;
+        padding-top: 6px;
+        padding-right: 18px;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    #gast{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    #gast .galeria{
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        width:80vw;
+        margin-bottom: 40px;
+    }
+    #gast  .galeria .foto1 img{
+        width:70vw;
+        height:25vh;
+        padding-top: 0px;
+        z-index: 1;
+        position: relative;
+        border-radius: 10px;
+    }
+    #gast .man p {
+        width:90vw;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 20px;
+    }
+    #gast .man img{
+        width:72%;
+        border-radius: 15px;
+        margin-left: 50px;
+    }
+    #gast .man{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding: 0%;
+    }
+    #gast .por p{
+        background-color: beige;
+        width:85vw;
+        justify-content: center;
+        color:grey;
+    }
+    #gast .galeria .foto1 h1{
+        font-size: max(18px, 1.2vw);
+        visibility: visible;
+    }
+    #gast .galeria .foto1 .texto p{
+        bottom:3.5vh;
+        visibility: visible;
+        color: white;
+        height: 18vh;
+        font-size: max(14.6px, 1.2vw);
+    }
+    #gast .por{
+        background-color: beige;
+        padding-left: 5%;
+    }
+    #gast .galeria .foto1 .texto{
+        position: absolute;
+        top:0.6px;
+        left:0px;
+        z-index: 1000;
+        width: 70vw;
+    }
+    #gast .galeria .foto1:hover .texto{
+        visibility: visible;
+        height: 25vh;
+    }
+}
+
+

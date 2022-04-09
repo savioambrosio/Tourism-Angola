@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Zilla Slab
+- Font Author: Copyright 2017, The Mozilla Foundation
+- Font Source: http://fonts.gstatic.com/s/zillaslab/v6/dFanZfeM_74wlPZtksIFaj8CRHGpXnp2fazkfg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
