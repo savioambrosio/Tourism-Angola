@@ -219,7 +219,7 @@ nav ul li i{
     font-size: 14px;
 }
 .ima img{
-    width:55px;
+    width:50px;
 }
 .slide{
     background-color: black;
@@ -799,7 +799,7 @@ footer .fot p{
         background: rgba(0,0,0,0.1);
         backdrop-filter: blur(10px);
         padding-top: 28px;
-        top: 56px;
+        top: 42px;
         height: 0vh;
         z-index: 9999;
         position: fixed;
@@ -828,7 +828,7 @@ footer .fot p{
         top:28%;
     }
     .menubot #ulnave li{
-        font-size: max(21px, 1.1vw);
+        font-size:20px;;
         border-bottom: none;
         padding: 12px;
         font-weight: bold;
@@ -880,10 +880,10 @@ footer .fot p{
         display: none;
     }
     .ima img{
-        width:45px;
+        width:35px;
     }
     nav {
-        height:55px;
+        height:41px;
         padding-top: 10px;
         z-index: 9999;
         position: fixed;
@@ -892,7 +892,7 @@ footer .fot p{
         display: block;
         background-color: whitesmoke;
         width:33px;
-        height: 2.9px;
+        height: 2px;
         cursor: pointer;
         box-shadow: 0.1rem 0.1rem 1px grey;
     }
@@ -903,12 +903,12 @@ footer .fot p{
         width:40px;
         transform: rotate(180deg);
         transition: 2s ease infinite;
-        height:18px;
+        height:15px;
         cursor: pointer;
     }
     .images img{
         position: absolute;
-        bottom: 4%;
+        bottom: 1%;
         left:50%;
         width: 30px;
         animation: jump 1s linear infinite;
@@ -984,26 +984,26 @@ footer .fot p{
         height: 90vh;
     }
     .slide p{
-        top: 54%;
+        top: 55%;
         left: 10%;
         right: 10%;
         text-align: center;
         font-size: 16px;
     }
     .slide h2{
-        top: 44%;
+        top: 43%;
         left: 14vw;
         justify-content: center;
         font-size: 18px;
     }
     .slide h1{
-        top: 44%;
+        top: 43%;
         left: 50vw;
         justify-content: center;
         font-size: 18px;
     }
     .slide h3{
-        top: 44%;
+        top: 43%;
         left: 65vw;
         justify-content: center;
         font-size: 18px;
@@ -1022,7 +1022,7 @@ footer .fot p{
         font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     #inicio main h2{
-        font-size: max(18px, 1.1vw);
+        font-size: 18px;
         padding-top: 1px;
     }
     #inicio main img{
