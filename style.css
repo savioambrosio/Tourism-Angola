@@ -1084,7 +1084,7 @@ footer .fot p{
     #gast .man img{
         width:72%;
         border-radius: 15px;
-        margin-left: 50px;
+        margin-left: 45px;
         padding-bottom: 14px;
     }
     #gast .man{
@@ -1108,6 +1108,7 @@ footer .fot p{
         visibility: visible;
         color: white;
         font-size: 14px;
+        height: 18px;
     }
     #gast .por{
         background-color: beige;
