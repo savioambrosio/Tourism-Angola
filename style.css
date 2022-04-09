@@ -949,8 +949,9 @@ footer .fot p{
         padding-bottom: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
-        margin-right: 50px;
+        margin-right: 10px;
         padding-left: 8px;
+        margin-left:10px;
     }
     .headline p{
         margin-left: 15px;
