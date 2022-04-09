@@ -944,7 +944,7 @@ footer .fot p{
         left: 50%;
     }
     .polaroid{
-        width:90%;
+        width:100%;
         padding-top: 10px;
         padding-bottom: 20px;
         margin-bottom: 10px;
@@ -952,18 +952,6 @@ footer .fot p{
         margin-right: 50px;
         margin-left: 10px;
         padding-left: 8px;
-    }
-    .polaroid:hover{
-        transform: scale(1.1);
-        transition: 2s;
-        background-color: gainsboro;
-        color: white;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 8px;
-        margin-bottom: 40px;
-        margin-left: 12px;
-        margin-right: 30px;
     }
     .headline p{
         margin-left: 15px;
