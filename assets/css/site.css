@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -14,7 +16,8 @@ a:hover { color: #ffc107; }
 .transition,
 .card,
 .card-body,
-.navbar {
+.navbar,
+.gallery-inner {
     -webkit-transition: all .2s ease-out 0s !important;
     -moz-transition: all .2s ease-out 0s !important;
     -ms-transition: all .2s ease-out 0s !important;
@@ -23,7 +26,8 @@ a:hover { color: #ffc107; }
 }
 
 .box-shadow,
-.card:hover { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.card:hover,
+.gallery-item:hover { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 .card img { 
     width: 100%;
@@ -227,4 +231,35 @@ a:hover { color: #ffc107; }
     object-fit: cover;
     object-position: center;
     border-radius: .25rem;
+}
+
+.gallery-item { 
+    position: relative; 
+    border-radius: .25rem !important;
+} 
+
+.gallery-item img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .25rem !important;
+}
+
+.gallery-item:hover > .gallery-inner {
+    visibility: visible;
+    height: 100%;
+}
+
+.gallery-inner {
+    padding: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    border-radius: .25rem;
+    color: white;
 }
