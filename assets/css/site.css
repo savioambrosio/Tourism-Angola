@@ -280,3 +280,10 @@ a:hover { color: #ffc107; }
     border-radius: .25rem;
     color: white;
 }
+
+.brands { display: inline-flex;  }
+.brands div { margin-right: 1rem; }
+
+.social-link a {
+    font-size: 24pt;
+}
