@@ -1,66 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dc3545"/>
+    <meta name="msapplication-navbutton-color" content="#dc3545"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#dc3545"/>
+
     <title>Turismo Angola</title>
-    <link rel="icon" href="imagens/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="turismo.js">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+    <link rel="icon" href="assets/images/logo.png">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
 </head>
 <body>
-    <nav id="nav">
-        <div id="navcontanier">
-            <div class="ima">
-                <img src="imagens/logo.png" id="icone">   
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark border-top">
+            <div class="container-fluid container">
+                <a class="navbar-brand" asp-area="" asp-action="home">
+                    <img src="assets/images/logo.png" alt="Logo" width="35px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#turism">
+                                <i class="fa-solid fa-house-chimney"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#astro">
+                                <i class="fa-solid fa-book-atlas"></i>
+                                Atrações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#hoteis">
+                                <i class="fa-solid fa-hotel"></i>Hóteis
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gastro">
+                                <i class="fa-solid fa-bell-concierge"></i>Gastronomia
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="hoteis">
+                                <i class="fa-solid fa-phone"></i>Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="btnmobile"onclick="menushow()">
-                <div class="linha linha1"></div>
-                <div class="linha linha2"></div>
-                <div class="linha linha3"></div>
-            </div>
+        </nav>
+    </header>
 
-            <ul id="ulnav">
-                <li id="turism"><i class="fa-solid fa-house-chimney"></i>Inicio</li>
-                <li id="astro"><i class="fa-solid fa-book-atlas"></i>Atrações</li>
-                <li id="hot"><i class="fa-solid fa-hotel"></i>Hoteis</li>
-                <li id="gastro"><i class="fa-solid fa-bell-concierge"></i>Gastronomia</li>
-                <li><i class="fa-solid fa-phone"></i>Contacto</li>
-            </ul>        
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="assets/images/mont.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/palanca.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="assets/images/luanda.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-    </nav>
-    <div class="slide">
-        <div id="slides">          
-            <figure>
-                <img src="imagens/mont.jpg">  
-                <img src="imagens/palanca.jpg">  
-                <img src="imagens/DJI.JPG">  
-                <img src="imagens/luanda.jpg">  
-                <img src="imagens/mont.jpg">  
-           </figure>
-            <h2 data-text="Apaixonate">Apaixonate</h2>
-            <h1 data-text="por">por</h1> 
-            <h3 data-text="Angola">Angola</h1> 
 
-            <p id="headline">Explora Angola de modo que possas conhecer e usufruir dos pontos mais atraentes desde a gastronomia até as atrações turísticas que Angola dispõe!</p>
-            <div class="images">
-                <img id="botao" src="imagens/scrool.png" alt="">
+        <div class="carousel-banner">
+            <div class="banner-inner">
+                <h2 data-text="Apaixonate">Apaixonate</h2>
+                <h1 data-text="por">por</h1> 
+                <h3 data-text="Angola">Angola</h1> 
+
+                <p id="headline">
+                    Explore Angola de modo a que possas conhecer e usufruir dos pontos 
+                    mais atraentes desde a gastronomia até as atrações turísticas que Angola dispõe!
+                </p>
+                <div class="images">
+                    <img id="botao" src="imagens/scrool.png" alt="">
+                </div>
             </div>
-            <div class="menubot">
-                <ul id="ulnave">
-                    <li id="turismo" onclick="menushow()"><i class="fa-solid fa-house-chimney"></i>Inicio</li>
-                    <li id="gastroo" onclick="menushow()"><i class="fa-solid fa-bell-concierge"></i>Grastonomia</li>
-                    <li id="astroo" onclick="menushow()"><i class="fa-solid fa-book-atlas"></i>Atrações</li>
-                    <li id="hoto" onclick="menushow()"><i class="fa-solid fa-hotel"></i>Hoteis</li>
-                    <li><i class="fa-solid fa-phone" onclick="menushow()"></i>Contacto</li>
-                </ul>   
-            </div> 
+            <div class="jumbotron">
+                <img id="botao" src="assets/images/scrool.png" alt="Jumbotron">
+            </div>
         </div>
     </div>
+
     <section id="inicio">
         <main>
             <h2>Turismo Angola</h2>
@@ -75,6 +110,10 @@
             <video src="imagens/angol.mp4"controls poster="imagens/Turis.png"></video>
         </aside>
     </section>
+
+
+
+
     <section id="atracoes">
         <div class="headlineeee">
             <p>Atrações</P>
@@ -139,6 +178,7 @@
             </div>
         </main>
     </section>
+
     <section id="cliente">
         <div class="headlineee">
             <p>Hoteis</p>
@@ -206,9 +246,11 @@
             </div>           
         </main>
     </section>
+
     <a class="what" href="https://web.whatsapp.com/send?phone=945512220" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>   
     </a>
+
     <section id="gast">
         <div class="headlineeee">
             <p>Gastronomia</P>
@@ -265,6 +307,7 @@
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="fot">
             <img src="imagens/opa.png" alt="">
@@ -287,6 +330,8 @@
 
         <a id="link" href="#">&#9650;</a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/site.js"></script>
 </body>
-<script src="turismo.js"></script>
 </html>
