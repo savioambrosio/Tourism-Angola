@@ -154,3 +154,8 @@
     50% { transform: translateY(0); }
     to { transform: translateY(-15px); }
 }
+
+.info p {
+    text-align: justify;
+    color: rgba(0, 0, 0, .8);
+}
