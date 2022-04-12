@@ -4,6 +4,13 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+a:hover { color: #ffc107; }
+
 .transition,
 .card,
 .card-body,
@@ -212,4 +219,12 @@ html {
 .info p {
     text-align: justify;
     color: rgba(0, 0, 0, .8);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .25rem;
 }
