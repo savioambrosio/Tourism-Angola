@@ -6,12 +6,6 @@ html {
     min-height: 100%;
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
 body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -109,14 +103,14 @@ a:hover { color: #ffc107; }
     text-align: center;
 }
 
-.banner-inner h1{
+.banner-inner h1 {
     color: rgba(0, 0, 0, 0);
     font-size: max(24px, 1.2vw);
     font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-bottom: 10px;
     font-weight: bold;
     object-fit: cover;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #696969;
     position: absolute;
     top: 42%;
     left: 48vw;
@@ -124,21 +118,21 @@ a:hover { color: #ffc107; }
     text-transform: uppercase;
 }
 
-.banner-inner h1::before{
+.banner-inner h1::before {
     content: attr(data-text);
     position: absolute;
     top:0%;
     left: 0vw;
     width:0;
     height:100%;
-    color: rgba(0, 0, 0, .6);
+    color: #696969;
     animation: write 3s linear infinite;
     -webkit-text-stroke: 0vw red;
     border-right: 2px solid rgba(0, 0, 0, 0);
     overflow: hidden;
 }
 
-.banner-inner h2{
+.banner-inner h2 {
     color: rgba(0, 0, 0, 0);
     font-size: max(24px, 1.2vw);
     font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -153,7 +147,7 @@ a:hover { color: #ffc107; }
     text-transform: uppercase;
 }
 
-.banner-inner h2::before{
+.banner-inner h2::before {
     content: attr(data-text);
     position: absolute;
     top:0%;
@@ -167,7 +161,7 @@ a:hover { color: #ffc107; }
     overflow: hidden;
 }
 
-.banner-inner h3{
+.banner-inner h3 {
     color: rgba(0, 0, 0, 0);
     font-size: max(24px, 1.2vw);
     font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -182,7 +176,7 @@ a:hover { color: #ffc107; }
     text-transform: uppercase;
 }
 
-.banner-inner h3::before{
+.banner-inner h3::before {
     content: attr(data-text);
     position: absolute;
     top:0%;
@@ -225,7 +219,7 @@ a:hover { color: #ffc107; }
 .jumbotron img {
     position: absolute;
     bottom: 4%;
-    left: 50%;
+    left: 46%;
     width: 30px;
     animation: jump 1s linear infinite;
     cursor: pointer;
@@ -283,7 +277,41 @@ a:hover { color: #ffc107; }
 
 .brands { display: inline-flex;  }
 .brands div { margin-right: 1rem; }
+.social-link a { font-size: 24pt; }
 
-.social-link a {
-    font-size: 24pt;
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-inner h2 {
+        top: 43%;
+        left: 14vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .banner-inner h1 {
+        top: 43%;
+        left: 50vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .banner-inner h3 {
+        top: 43%;
+        left: 65vw;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .banner-inner p { width: 80%; }
+
+    .banner-inner { margin-top: 5%; }
+
+    .card { width: 100% !important; }
+
+    .item, h2 { text-align: center; }    
 }
