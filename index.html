@@ -17,15 +17,15 @@
 
     <link rel="icon" href="assets/images/logo.png">
 
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/site.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark border-top">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-toggleable-sm navbar-dark border-top mb-3">
             <div class="container-fluid container">
                 <a class="navbar-brand" asp-area="" asp-action="home">
                     <img src="assets/images/logo.png" alt="Logo" width="35px" />
@@ -37,13 +37,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#turism">
+                            <a class="nav-link text-white" href="#main">
                                 <i class="fa-solid fa-house-chimney"></i>
                                 Inicio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#astro">
+                            <a class="nav-link text-white" href="#atracoes">
                                 <i class="fa-solid fa-book-atlas"></i>
                                 Atrações
                             </a>
@@ -55,13 +55,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#gastro">
+                            <a class="nav-link text-white" href="#gastronomia">
                                 <i class="fa-solid fa-bell-concierge"></i>
                                 Gastronomia
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="hoteis">
+                            <a class="nav-link text-white" href="#contact">
                                 <i class="fa-solid fa-phone"></i>
                                 Contacto
                             </a>
@@ -74,14 +74,14 @@
 
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="assets/images/mont.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/mont.jpg" class="d-block w-100" alt="Slide 1">
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/palanca.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/palanca.jpg" class="d-block w-100" alt="Slide 2">
             </div>
-            <div class="carousel-item active">
-                <img src="assets/images/luanda.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/images/luanda.jpg" class="d-block w-100" alt="Slide 3">
             </div>
         </div>
 
@@ -97,14 +97,16 @@
                 </p>
             </div>
             <div class="jumbotron">
-                <img id="botao" src="assets/images/scrool.png" alt="Jumbotron">
+                <a href="#main">
+                    <img src="assets/images/scrool.png" alt="Jumbotron">
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5" id="main">
         <div class="container">
-            <section class="row" id="inicio">
+            <section class="row">
                 <div class="col-lg-6">
                     <div class="info mt-2">
                         <h2 class="text-warning mb-2">Turismo Angola</h2>
@@ -568,7 +570,7 @@
         </div>
     </div>
     
-    <footer class="p-5 text-center">
+    <footer class="p-5 text-center" id="contact">
         <div class="footer">
             <div class="mb-3">
                 <img src="assets/images/opa.png" alt="Apoios">
@@ -626,6 +628,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/site.js"></script>
     <script>
