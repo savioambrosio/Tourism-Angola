@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family:  "Be Vietnam Pro", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Plus Jakarta Sans', sans-serif;
     font-size: max(14px, 1.2vw);
     background-position: center center;
     background-size: cover;
@@ -949,9 +949,14 @@ footer .fot p{
         padding-bottom: 20px;
         margin-bottom: 10px;
         margin-top: 10px;
-        margin-right: 10px;
-        padding-left: 8px;
-        margin-left:10px;
+        margin-right: 2px;
+        margin-left: 1px;
+        padding-left: 2px;
+        background-color: beige;
+        margin-right: 1px;
+    }
+    .polaroid:hover{
+        display: none;
     }
     .headline p{
         margin-left: 15px;
@@ -1088,12 +1093,13 @@ footer .fot p{
     #gast .galeria .foto1 h1{
         font-size:16px;
         visibility: visible;
+        font-family: 'Plus Jakarta Sans', sans-serif;
     }
     #gast .galeria .foto1 .texto p{
-        bottom:3vh;
+        bottom:2.9vh;
         visibility: visible;
         color: white;
-        font-size: 12px;
+        font-size: 12.3px;
         height: 18vh;
     }
     #gast .por{
@@ -1109,6 +1115,6 @@ footer .fot p{
     }
     #gast .galeria .foto1:hover .texto{
         visibility: visible;
-        height: 25vh;
+        height: 25.5vh;
     }
 }
