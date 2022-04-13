@@ -219,7 +219,7 @@ a:hover { color: #ffc107; }
 .jumbotron img {
     position: absolute;
     bottom: 4%;
-    left: 46%;
+    left: 50%;
     width: 30px;
     animation: jump 1s linear infinite;
     cursor: pointer;
@@ -306,6 +306,8 @@ a:hover { color: #ffc107; }
         justify-content: center;
         font-size: 18px;
     }
+
+    .jumbotron img { left: 46%; }
 
     .banner-inner p { width: 80%; }
 
