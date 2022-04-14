@@ -549,11 +549,10 @@ figure img{
     color:gold;
     background-color: rgba(0,0,0,0.3);
     padding: 8px;
-    position: fixed;
+    position: relative;
     border-radius: 5px;
     box-shadow: 1px 1px 4px #000; 
-    right:20px;
-    bottom: 21px;
+    right: 100px;
     font-size: 15px;
 }
 .polaroida h1{
@@ -694,7 +693,7 @@ main h2{
     color: white;
     background: linear-gradient(72deg,red 20%, gold 100%);
     font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: max(20px, 1.2vw);
+    font-size: max(18px, 1.1vw);
 }
 main p{
     padding-top: 12px;
@@ -829,10 +828,10 @@ footer .fot p{
         padding-top: 10px;
         text-align: center;
         left:25%;
-        top:30%;
+        top:26%;
     }
     .menubot #ulnave li{
-        font-size:18px;;
+        font-size:17px;;
         border-bottom: none;
         padding: 12px;
         font-weight: bold;
@@ -929,11 +928,9 @@ footer .fot p{
         width: 100%;
         display: grid;
         overflow: auto;
-        transition: 3s;
-        background-color: beige;
-        padding-right: 5px;
+        padding-right: 1px;
         padding-top: 10px;
-        padding-left: 5px;
+        padding-left: 1px;
         background-color: beige;
         grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
         grid-gap: 3px;
@@ -1100,14 +1097,14 @@ footer .fot p{
         color:grey;
     }
     #gast .galeria .foto1 h1{
-        font-size:16px;
+        font-size:14px;
         visibility: visible;
     }
     #gast .galeria .foto1 .texto p{
-        bottom:2.9vh;
+        bottom:2.8vh;
         visibility: visible;
         color: white;
-        font-size: 12.3px;
+        font-size: 12px;
         height: 18vh;
         font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -1129,8 +1126,8 @@ footer .fot p{
     .polaroid h2{
         padding-bottom: 3px;
         color:grey;
-        font-size: 1.1rem;
-        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-family: "Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background: none;
     }
 }
