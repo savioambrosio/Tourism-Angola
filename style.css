@@ -956,8 +956,8 @@ footer .fot p{
         margin-top: 10px;
         margin-right: px;
         margin-left: 0px;
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 1px;
+        padding-right: 1px;
         background-color: beige;
         margin-right: 1px;
     }
@@ -1101,11 +1101,11 @@ footer .fot p{
         visibility: visible;
     }
     #gast .galeria .foto1 .texto p{
-        bottom:2.8vh;
+        bottom:5vh;
         visibility: visible;
         color: white;
         font-size: 12px;
-        height: 18vh;
+        height: 16vh;
         font-family:"Be Vietnam Pro",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     #gast .por{
