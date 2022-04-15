@@ -516,11 +516,14 @@ figure img{
     height: 100%;
     display: flex;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
     transition: 3s;
     background: beige;
     padding:20;
     list-style: none;
+}
+#cliente main::-webkit-scrollbar{
+    width:8;
 }
 
 .what{
@@ -583,8 +586,8 @@ figure img{
 }
 #cliente main .polaroida{
     width:50vw;
-    padding-left: 50px;
-    padding-right: 40px;
+    padding-left: 45px;
+    padding-right: 30px;
     padding-top: 20px;
     background-color:white;
 }
