@@ -1,4 +1,5 @@
-# Projecto Turismo Angola
+# Angola Tourism Project
 
-#### Este site "Turismo em Angola", foi criado com objectivo de que mais pessoais possam conhecer as partes mais relevante do Pais e que possam usufruir da melhor maneira.
+#### This web site "Tourism in Angola" was created with the aim of allowing more people to know the most relevant parts of the country and to enjoy it in the best way.
 
+click on this link to access it [Turismo Angola](https://turismoangola.netlify.app/#)
